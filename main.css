@@ -1,0 +1,26 @@
+textarea {
+    height: 220px;
+    width: 30vw;
+    border: 2px solid gray;
+    box-shadow: inset 5px 5px 12px rgb(41, 40, 40), inset rgb(41, 40, 40) -5px -5px 12px;
+    font-size: 18px;
+}
+.btns {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#display{
+    height: 250px;
+    width: 30vw;
+    background-color: lightgrey;
+    border: 2px solid gray;
+    font-size: 18px;
+}
+button{
+    padding: 5px 7px;
+}
+#desLang, #sourceLang {
+    margin-left: 10px;
+    margin-right: 10px;
+}
