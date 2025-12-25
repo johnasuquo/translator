@@ -1,26 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: white;
+}
+
 textarea {
-    height: 220px;
-    width: 30vw;
-    border: 2px solid gray;
-    box-shadow: inset 5px 5px 12px rgb(41, 40, 40), inset rgb(41, 40, 40) -5px -5px 12px;
+    height: 60px;
+    background-color: #ffffff;
     font-size: 18px;
+    width: 400px;
+    margin-bottom: 20px;
+    outline: none;
 }
 .btns {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #display{
     height: 250px;
-    width: 30vw;
     background-color: lightgrey;
-    border: 2px solid gray;
     font-size: 18px;
+    padding: 10px;
+    overflow-y: scroll;
+    width: 400px;
+    margin-top: 20px;
+
 }
 button{
     padding: 5px 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px blue;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 5px;
+
 }
+
+button:hover {
+    background-color: darkblue;
+}
+
 #desLang, #sourceLang {
     margin-left: 10px;
     margin-right: 10px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+#languages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#languages p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+#languages .btns {
+    justify-content: center;
+}
+#languages .btns .src, #languages .btns .des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    textarea, #display {
+        width: 80%;
+    }
 }
